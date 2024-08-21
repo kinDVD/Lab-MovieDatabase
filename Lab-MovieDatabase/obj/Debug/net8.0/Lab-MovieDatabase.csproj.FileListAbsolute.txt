@@ -12,3 +12,4 @@ C:\Users\Test User\source\repos\Lab-MovieDatabase\Lab-MovieDatabase\obj\Debug\ne
 C:\Users\Test User\source\repos\Lab-MovieDatabase\Lab-MovieDatabase\obj\Debug\net8.0\Lab-MovieDatabase.pdb
 C:\Users\Test User\source\repos\Lab-MovieDatabase\Lab-MovieDatabase\obj\Debug\net8.0\Lab-MovieDatabase.genruntimeconfig.cache
 C:\Users\Test User\source\repos\Lab-MovieDatabase\Lab-MovieDatabase\obj\Debug\net8.0\ref\Lab-MovieDatabase.dll
+C:\Users\Test User\source\repos\Lab-MovieDatabase\Lab-MovieDatabase\obj\Debug\net8.0\Lab-MovieDatabase.sourcelink.json

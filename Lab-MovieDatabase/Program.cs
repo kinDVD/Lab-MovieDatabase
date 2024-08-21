@@ -6,10 +6,11 @@ using System.Reflection;
 using System.Xml.Serialization;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-Console.WriteLine("Welcome to the Movie List!");
 
-List <Movie> movies = new List<Movie> 
-{ 
+    Console.WriteLine("Welcome to the Movie List!");
+
+    List<Movie> movies = new List<Movie>
+{
     new Movie("Star Wars", "fantasy"),
     new Movie("Nope", "horror"),
     new Movie("Galaxy Quest", "comedy"),
@@ -33,12 +34,95 @@ List <Movie> movies = new List<Movie>
     new Movie("The Wandering Earth", "international"),
     new Movie("Fantastic Planet", "animated")
 };
-string goAgain = "yes";
+    //Movie.OrderByTitle(movies);
+    //Movie.OrderByCategory(movies);
+    foreach (Movie movie in movies)
+    {
+        int idx = movies.IndexOf(movie) + 1;
+        Console.WriteLine($"{idx}. {movie.Title} - {movie.Category}");
+    }
+    Console.WriteLine();
+    Console.WriteLine("You can select movie by number or title. Or, to filter by category, enter the category.");
+    string selection = Console.ReadLine();
+
+    List<string> catalog = new List<string>();
+    int numS = 0;
+    bool sInt = false;
+
+    if (int.TryParse(selection, out int id))
+    {
+        numS = int.Parse(selection);
+        sInt = true;
+    }
+
+    foreach (Movie movie in movies)
+    {
+        if (sInt == true)
+        {
+            int s = numS - 1;
+            for (int i = 0; i <= movies.Count; i++)
+            {
+                if (s == movie.Title[i])
+                {
+                    catalog.Add(movie.Title);
+                }
+            }
+        }
+        else if (movie.Category == selection)
+        {
+            catalog.Add(movie.Title);
+        }
+        else if (movie.Title == selection)
+        {
+            catalog.Add(movie.Title);
+            break;
+        }
+    }
+    foreach (string c in catalog)
+    {
+        Console.WriteLine($"{c}");
+    }
+
+    /*Console.WriteLine($"Would you like to look at more movies? y/n");
+    string again = Console.ReadLine().Trim().ToLower();
+    if (again == "y")
+    {
+        result = true;
+        Console.Clear();
+    }
+    else if (again == "n")
+    {
+        result = false;
+        break;
+    }
+    else
+    {
+        Console.WriteLine("Invalid input. Try again");
+    }
+}
+
+/*List<string> VHS = movies.Select(v => v.Title.ToString()).ToList();
+foreach(string v in VHS)
+{
+    Console.WriteLine(v);
+}
+
+List<string> categories = movies.Select(m => m.Category.ToLower()).Distinct().ToList();
+foreach(string category in categories)
+{
+    Console.WriteLine(category);
+}
+
+
+/*string goAgain = "yes";
+
 do 
 { 
     List<string> filmshelf = new List<string>();
     Movie.OrderByTitle(movies, filmshelf);
     Console.WriteLine($"There are {movies.Count} available.");
+
+    
 
     foreach(var m in filmshelf)
     {
@@ -109,4 +193,4 @@ else
     Console.WriteLine("Please enter yes or no.");
 }
 
-} while (goAgain == "yes") ;
+} while (goAgain == "yes") ;*/

@@ -13,25 +13,25 @@ namespace Lab_MovieDatabase
 {
     internal class Movie
     {
-        string Title { get; set; }
-        string Category { get; set; }
+        public string Title { get; set; }
+        public string Category { get; set; }
         public Movie(string title, string category)
         {
             Title = title;
             Category = category;
         }
 
-        public static void OrderByTitle(List<Movie> movies, List<string> filmshelf)
+        public static void OrderByTitle(List<Movie> movies)
         {
             movies.OrderBy(x => x.Title).ToList();
-            foreach (Movie movie in movies)
-            {
-                filmshelf.Add(movie.Title);
-            }
+        }
+        public static void OrderByCategory(List<Movie> movies)
+        {
+            movies.OrderBy(x => x.Category).ToList();
         }
 
 
-        public static List<string> GetBySelection(List<Movie> movies, string selection, List<string> selections)
+        /*public static List<string> GetBySelection(List<Movie> movies, string selection, List<string> selections)
         {
             foreach (Movie movie in movies)
             {
@@ -70,7 +70,7 @@ namespace Lab_MovieDatabase
         public static void OrderBySelection(List<string> selections)
         {
             selections.Sort();
-        }
+        }*/
 
     }
 }
