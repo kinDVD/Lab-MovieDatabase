@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Metadata.Ecma335;
@@ -19,6 +20,14 @@ namespace Lab_MovieDatabase
         {
             Title = title;
             Category = category;
+        }
+
+        public static void ListMovies(List<Movie> movies)
+        {
+            for (int i = 0; i < movies.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {movies[i]}");
+            }
         }
 
         public static void OrderByTitle(List<Movie> movies)

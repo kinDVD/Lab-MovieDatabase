@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Test User\\source\\repos\\Lab-MovieDatabase\\Lab-MovieDatabase\\Lab-MovieDatabase.csproj": {}
+    "C:\\Users\\Test User\\source\\repos\\Lab\\Lab-MovieDatabase\\Lab-MovieDatabase\\Lab-MovieDatabase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Test User\\source\\repos\\Lab-MovieDatabase\\Lab-MovieDatabase\\Lab-MovieDatabase.csproj": {
+    "C:\\Users\\Test User\\source\\repos\\Lab\\Lab-MovieDatabase\\Lab-MovieDatabase\\Lab-MovieDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Test User\\source\\repos\\Lab-MovieDatabase\\Lab-MovieDatabase\\Lab-MovieDatabase.csproj",
+        "projectUniqueName": "C:\\Users\\Test User\\source\\repos\\Lab\\Lab-MovieDatabase\\Lab-MovieDatabase\\Lab-MovieDatabase.csproj",
         "projectName": "Lab-MovieDatabase",
-        "projectPath": "C:\\Users\\Test User\\source\\repos\\Lab-MovieDatabase\\Lab-MovieDatabase\\Lab-MovieDatabase.csproj",
+        "projectPath": "C:\\Users\\Test User\\source\\repos\\Lab\\Lab-MovieDatabase\\Lab-MovieDatabase\\Lab-MovieDatabase.csproj",
         "packagesPath": "C:\\Users\\Test User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Test User\\source\\repos\\Lab-MovieDatabase\\Lab-MovieDatabase\\obj\\",
+        "outputPath": "C:\\Users\\Test User\\source\\repos\\Lab\\Lab-MovieDatabase\\Lab-MovieDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Test User\\AppData\\Roaming\\NuGet\\NuGet.Config",
